@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<HTML><HEAD><META name="viewport" content="width=device-width, initial-scale=1.0">
+<TITLE>PMS 5003 Air Quality Page</TITLE>
+<link rel="stylesheet" type="text/css" href="PMS.css">
+<script>
+  setInterval(function ( ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {        
+ 
+    //    document.getElementById("debug").innerHTML = this.responseText ;
+        
+        var updateData = this.responseText.split(",");
+        document.getElementById("P1").innerHTML = updateData[0];
+        document.getElementById("P2").innerHTML = updateData[1];
+        document.getElementById("P3").innerHTML = updateData[2];
+        document.getElementById("P4").innerHTML = updateData[3];
+        document.getElementById("P5").innerHTML = updateData[4];
+        document.getElementById("P6").innerHTML = updateData[5];
+        document.getElementById("P7").innerHTML = updateData[6];
+        document.getElementById("P8").innerHTML = updateData[7];
+        document.getElementById("P9").innerHTML = updateData[8];
+        document.getElementById("P10").innerHTML = updateData[9];
+        document.getElementById("P11").innerHTML = updateData[10];
+        document.getElementById("P12").innerHTML = updateData[11];
+        document.getElementById("PA1").innerHTML = updateData[12];
+        document.getElementById("PA2").innerHTML = updateData[13];
+        document.getElementById("PA3").innerHTML = updateData[14];
+        document.getElementById("C1").innerHTML = updateData[15];
+        document.getElementById("TM1").innerHTML = updateData[16];   }
+    };
+    xhttp.open("GET", "/update", true);
+    xhttp.send();
+  }, 1000 );
+</script>
+</HEAD>
+<BODY><CENTER><br/>
+<TABLE border="1">
+<TR><TD align=center colspan=6><div class="pagetitle"><B>PMS 5003 Air Quality Sensor</B></div></TD></TR>
+<TR align=center><TD colspan=3 Align=left id="TM1">%TM1%</TD><TD>PM 1.0</TD><TD>PM 2.5</TD><TD>PM 10</TD></TR>
+<TR align=center><TD colspan=3 Align=left>Concentration Units (standard)</TD>
+    <TD id="P1">%P1%</TD><TD id="P2">%P2%</TD><TD id="P3">%P3%</TD></TR>
+<TR align=center><TD colspan=3 Align=left id="C1">Moving Average %C1%</TD>
+    <TD id="PA1">%PA1%</TD><TD id="PA2">%PA2%</TD><TD id="PA3">%PA3%</TD></TR>
+<TR align=center><TD colspan=3 Align=left>Concentration Units (environmental)</TD>
+    <TD id="P4">%P4%</TD><TD id="P5">%P5%</TD><TD id="P6">%P6%</TD></TR>
+<TR align=center><TD>>0.3um/0.1L</TD><TD>>0.5um/0.1L</TD><TD>>1.0um/0.1L</TD>
+    <TD>>2.5um/0.1L</TD><TD>>5.0um/0.1L</TD><TD>>10.0um/0.1L</TD></TR>
+<TR align=center><TD id="P7">%P7%</TD><TD id="P8">%P8%</TD><TD id="P9">%P9%</TD>
+    <TD id="P10">%P10%</TD><TD id="P11">%P11%</TD><TD id="P12">%P12%</TD></TR>
+</TABLE>
+</CENTER></BODY></HTML>

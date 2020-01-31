@@ -1,0 +1,14 @@
+body {
+          margin:0px 0px 0px 0px;
+	  background: url(/bg.gif) repeat-x;
+          background-color:#fff;
+	  text-align:left;
+
+}
+.pagetitle
+    {   background-color:Transparent;
+        font-size:36px;
+        text-align:center;
+        color:#d9d9d9;
+        text-shadow:rgba(255,255,255,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;
+    }
