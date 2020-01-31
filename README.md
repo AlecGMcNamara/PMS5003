@@ -1,6 +1,5 @@
-# Pollution Monitor using PMS5003 and ESP8266
- Display pollution data in browser
-
+# Air Quality Monitor using PMS5003 and ESP8266
+Display pollution data on any device in any browser
 
 To do: Add parts list suppliers
 
@@ -8,9 +7,9 @@ To do: Add parts list suppliers
 
 1x Plan Tower PMS5003
 
-1x Connection cable
+1x PMS5003 Connection cable
 
-1x Connection board
+1x PMS5003 Connection board
 
 1x Breadboard
 
