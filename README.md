@@ -16,5 +16,9 @@ To do: Add parts list suppliers
 
 3x Jumper wires
 
-To compile, create new Arduino with ESP8266_SPIFFS_PMS5003.ino and follow instruction in comments. 
+see 'test unit.jpg' connection details in program comments
+
+Create new Arduino project with ESP8266_SPIFFS_PMS5003.ino, add data folder (and files) to the Adruino folder. Upload data files and then compile and upload program.
+
+Search for wireless network PMS-5003 then browse page http://192.168.1.1
 
