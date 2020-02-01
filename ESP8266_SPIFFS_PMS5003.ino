@@ -10,9 +10,9 @@ Connections
    GND        GND        0V
    TX         D4        GPIO2    
 
-1) Upload files in data file
+1) Upload files in data folder
 2) Compile and upload program
-3) Connect to PMS-5003 network (no password)
+3) Connect to 'PMS-5003' wireless network (no password)
 4) goto address http://192.168.1.1
 */
 
@@ -21,8 +21,6 @@ Connections
 #include <ESPAsyncWebServer.h>
 #include <FS.h>
 #include <SoftwareSerial.h>
-
-//To do *** Make into AP 
 
 const char* ssid = "PMS-5003";
 
