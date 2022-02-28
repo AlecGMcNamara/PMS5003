@@ -13,7 +13,7 @@ Connections
 1) Upload files in data folder
 2) Compile and upload program
 3) Connect to 'PMS-5003' wireless network (no password)
-4) goto address http://192.168.1.1
+4) goto address http://192.168.1.4
 */
 
 #include <ESP8266WiFi.h>
